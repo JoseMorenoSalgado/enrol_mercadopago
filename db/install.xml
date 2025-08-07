@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="enrol/mercadopago/db" VERSION="2025080500" COMMENT="Tabla de pagos de Mercado Pago">
+  <TABLE NAME="enrol_mercadopago" COMMENT="Pagos procesados">
+    <FIELDS>
+      <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+      <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      <FIELD NAME="transactionid" TYPE="char" LENGTH="255" NOTNULL="true"/>
+      <FIELD NAME="status" TYPE="char" LENGTH="50" NOTNULL="true"/>
+      <FIELD NAME="amount" TYPE="decimal" LENGTH="10" DECIMALS="2" NOTNULL="true"/>
+      <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    </FIELDS>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+</XMLDB>
